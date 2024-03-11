@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Crimson_Text ,Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const bricolageGrotesque = Bricolage_Grotesque({ subsets: ["latin"] });
+const crimson = Crimson_Text({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="es">
+      <body className={`${inter.className} ${bricolageGrotesque.className} ${crimson.className}`}>{children}</body>
     </html>
   );
 }
