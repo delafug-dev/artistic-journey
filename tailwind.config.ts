@@ -15,8 +15,15 @@ const config: Config = {
       },
       fontFamily: {
         inter: ['var(--font-inter)'],
-        'crimson': ['var(--font-crimson-text)'],
-        'bricolage-grotesque': ['var(--font-bricolage-grotesque)'],
+        'nav': ['var(--font-crimson-text)'],
+        'heading': ['var(--font-bricolage-grotesque)'],
+      },
+      colors: {
+        'text': '#e5e4fc',
+        'background': '#05031e',
+        'primary': '#a5a4d3',
+        'secondary': '#33307e',
+        'accent': '#4d49c9',
       },
     },
   },
