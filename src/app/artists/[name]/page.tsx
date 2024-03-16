@@ -22,7 +22,7 @@ const getArtist = async (name: string): Promise<ArtistPaint[]> => {
 export default async function ArtistPage({ params }: Props) {
 
     const artist  = await getArtist(params.name)
-    console.log(artist)
+    // console.log(artist)
     
 
     return (

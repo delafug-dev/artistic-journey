@@ -18,17 +18,17 @@ const getArtists = async () => {
 export default async function ArtistsPage () {
 
   const data =  await getArtists();
-  console.log(data);
+  // console.log(data);
 
-  const seenArtists = {};
+  const seenArtists: { [key: string]: boolean } = {}; 
 
   return (
     <div className="bg-background w-full h-screen">
       <Header />
       <div className="gap-4 grid grid-cols-4 grid-rows-10 mt-10 p-10">
         { data.filter((artist: ArtObjectElement) => {
-            if (artist.principalOrFirstMaker !== "anonymous" && !seenArtists[artist.principalOrFirstMaker]) {
-              seenArtists[artist.principalOrFirstMaker] = true;
+            if (artist.principalOrFirstMaker !== "anonymous" && !seenArtists[artist.principalOrFirstMaker as string]) {
+              seenArtists[artist.principalOrFirstMaker as string] = true;
               return true;
             }
             return false;

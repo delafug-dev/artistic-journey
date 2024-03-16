@@ -10,7 +10,7 @@ export interface ArtObject {
 
 export interface ArtObjectElement {
     links?:                 Links;
-    id?:                     string;
+    id?:                    string;
     objectNumber?:          string;
     title?:                 string;
     hasImage?:              boolean;

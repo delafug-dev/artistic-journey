@@ -23,7 +23,7 @@ const getDetailPaint = async (id: string): Promise<ArtObjectDetailPaint > => {
 export default async function ObjectDetailPaintPage({ params }: Props) {
  
   const paint = await getDetailPaint(params.id)
-  console.log(paint)
+  // console.log(paint)
 
   const nameLink = paint?.title?.replace(/ /g, '+')
 
