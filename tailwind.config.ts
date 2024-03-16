@@ -15,8 +15,8 @@ const config: Config = {
       },
       fontFamily: {
         inter: ['var(--font-inter)'],
-        'nav': ['var(--font-crimson-text)'],
-        'heading': ['var(--font-bricolage-grotesque)'],
+        nav: ['var(--font-crimson-text)'],
+        heading: ['var(--font-bricolage-grotesque)'],
       },
       colors: {
         'text': '#e5e4fc',

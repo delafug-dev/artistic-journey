@@ -10,24 +10,22 @@ const getImagesGallery = async (): Promise<ArtObjectElement[]> => {
     return artObjects as ArtObjectElement[];
   } catch (error) {
     console.log(error);
-    return []; // Add a return statement here to handle the error case
+    return []; 
   }
 }
 
 
-
 export default async function GalleryPage() {
+
 
   const images = await getImagesGallery();
   
   return (
     <div className="">
       <Header />
-      <h1 className="font-heading text-3xl text-text">Gallery</h1>
-      <div className="p-10">
+      <div className="mt-10 p-10">
         <GalleryGrid images={images}/>
       </div>
-      {/* <EffectGradient /> */}
     </div>
   );
 }

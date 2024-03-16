@@ -28,8 +28,8 @@ export const PaintObjectGallery = ({paintObject}: PaintObjectGalleryProps) => {
                 priority
             />
             <div className="right-0 bottom-0 left-0 absolute bg-black opacity-0 group-hover:opacity-75 p-6 transition-opacity duration-300 ease-in-out">
-                <h3 className="font-heading font-semibold text-text text-xl">{paintObject.principalOrFirstMaker}, {date}</h3>
-                <p className="font-inter text-base text-text">{paintObject.title}</p>
+                <h3 className="font-heading font-semibold text-text text-xl">{paintObject.title}, {date}</h3>
+                <p className="font-inter text-base text-text">{paintObject.principalOrFirstMaker}</p>
             </div>
         </Link>
     </div>
